@@ -317,6 +317,5 @@ data2 <- sqldf("SELECT driverID, wins from driversStandings")
 data3 <- sqldf("SELECT driverID, driverRef, COUNT(wins) AS Wins FROM data1 JOIN data2 USING(driverID) GROUP By driverRef")
 data4 <- sqldf("SELECT * FROM data3 WHERE Wins > 100")
 #View(data3)
-
 ggplot(data4, aes(x = driverRef, y=Wins, fill=Wins) ) + geom_bar(width = .75,stat="identity")+coord_polar(theta = "x") 
 
