@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jan 02 19:29:01 2016
-Benchmarking of Forest Type Prediction Dataset on UCI Repository
-@author: Rupak Chakraborty
-"""
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
